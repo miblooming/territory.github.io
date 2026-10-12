@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN" data-default-entry="topic:strategy">
+<head>
+  <base href="../index.html">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#263c32">
+  <meta name="description" content="领地：种田与征战玩家手册。查阅操作、建筑、配方、农业、科技、战斗与世界资料，支持简体中文、English、繁體中文。">
+  <title>领地 · 玩家手册</title>
+  <link rel="icon" href="assets/logo.png">
+  <link rel="stylesheet" href="style.css?v=ce12af27c9e6">
+  <script defer src="locale.js?v=decdb4d7b2f8"></script>
+  <script defer src="data.js?v=51217fbf7213"></script>
+  <script defer src="app.js?v=bbcdbc4b5880"></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳至内容 / Skip to content</a>
+  <aside id="sidebar">
+    <a class="brand" href="#home"><img src="assets/logo.png" alt="Territory"><span id="brand-label"></span></a>
+    <div class="nav-caption" id="nav-caption"></div>
+    <nav id="navigation" aria-label="手册导航"></nav>
+    <div class="sidebar-bottom"><span class="status-dot"></span><span id="offline-label"></span><small id="edition-label"></small></div>
+  </aside>
+  <div id="veil"></div>
+  <div class="workspace">
+    <header class="topbar">
+      <button id="menu-toggle" class="icon-button mobile-menu" aria-label="菜单 / Menu" aria-expanded="false">☰</button>
+      <button id="index-toggle" class="layout-button" aria-controls="content-index" aria-expanded="true"><span aria-hidden="true">▤</span><span id="index-toggle-label">目录</span></button>
+      <div class="breadcrumb" id="breadcrumb"></div>
+      <div class="top-actions"><button id="orientation-toggle" class="layout-button orientation-button" hidden><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="7" y="4" width="10" height="16" rx="2"/><path d="M3 11a9 9 0 0 1 3-6M3 5v6h5M21 13a9 9 0 0 1-3 6m3 0v-6h-5"/></svg><span id="orientation-label"></span></button><button id="bookmark-view" class="icon-button" aria-label="收藏 / Bookmarks">☆</button><label class="language-control"><span aria-hidden="true">◎</span><select id="language" aria-label="语言 / Language"><option value="0">简体中文</option><option value="1">English</option><option value="2">繁體中文</option></select></label></div>
+    </header>
+    <main id="main" tabindex="-1"></main>
+    <footer id="footer"></footer>
+  </div>
+  <div id="toast" role="status"></div>
+  <noscript><p>请启用 JavaScript 以查阅手册与切换语言。Enable JavaScript to browse this manual.</p></noscript>
+</body>
+</html>
